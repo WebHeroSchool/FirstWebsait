@@ -1,17 +1,9 @@
 .title{
-  font-family:'Dancing Script', cursive;
+  font-family:'Roboto', sans-serif;
 }
 .text{
-  font-family: 'Satisfy', cursive;
-}
-@font-face{
-  font-family:'Boomboom';
-  src: url('fonts/boomboom.woff2')format('woff2');
-  src: url('fonts/boomboom.woff')format('woff');
-  src: url('fonts/boomboom.ttf')format('opentype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'PT+Serif', serif;
 }
 .menu{
-  font-family: 'Boomboom', cursive;
+  font-family: 'PT+Serif', serif;
 }
