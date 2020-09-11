@@ -1,12 +1,9 @@
-body{
-  ont-family: 'Roboto',sans-Serif;
-  font-style: normal;
+body {
+  font-family: 'Roboto', sans-Serif;
 }
-.logo{
+.logo {
   font-family: 'PT Serif', serif;
-  font-style: normal;
 }
-.main-content__title{
-  font-family:'PT Serif', serif;
-  font-style: normal;
+.main-content__title {
+  font-family: 'PT Serif', serif;
 }
