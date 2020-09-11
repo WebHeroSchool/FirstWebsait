@@ -1,9 +1,9 @@
-.title{
-  font-family:'Roboto', sans-serif;
+body {
+  font-family: 'Roboto', sans-Serif;
 }
-.text{
-  font-family: 'PT+Serif', serif;
+.logo {
+  font-family: 'PT Serif', serif;
 }
-.menu{
-  font-family: 'PT+Serif', serif;
+.main-content__title {
+  font-family: 'PT Serif', serif;
 }
