@@ -7,3 +7,10 @@ body {
 .main-content__title {
   font-family: 'PT Serif', serif;
 }
+.wrapper {
+  margin: auto;
+  width: 80%;
+  border: dashed 1px red;
+}
+
+}
