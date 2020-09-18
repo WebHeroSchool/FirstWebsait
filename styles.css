@@ -1,9 +1,36 @@
 body {
   font-family: 'Roboto', sans-Serif;
+  margin: 0;
 }
+
 .logo {
   font-family: 'PT Serif', serif;
+  padding: 40px 0;
 }
+
 .main-content__title {
   font-family: 'PT Serif', serif;
+}
+
+.wrapper {
+  margin: auto;
+  width: 80%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  padding: 0 13px;
+}
+
+.menu__item: last-child {
+  padding-right: 0;
 }
