@@ -29,7 +29,9 @@ body {
 
 .logo__circle_color_dark-blue { background: #0056ec; }
 
-.main-content__title { font-family: 'pt_serif', serif; }
+.main-content__title { 
+  font-family: 'pt_serif', serif; 
+}
 
 .wrapper {
   margin: auto;
@@ -46,7 +48,9 @@ body {
   align-items: center;
 }
 
-.menu__item { padding: 0 13px; }
+.menu__item {
+  padding: 0 13px;
+}
 
 .menu__item: last-child {
   padding-right: 0;
