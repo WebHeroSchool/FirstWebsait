@@ -46,8 +46,7 @@ body {
   align-items: center;
 }
 
-.menu__item { padding: 0 13px;
-}
+.menu__item { padding: 0 13px; }
 
 .menu__item: last-child {
   padding-right: 0;
