@@ -1,12 +1,14 @@
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0; }
+  margin: 0;
+}
 
 .logo {
-  font:bold 24px/31px pt_serifbold, arial, helvetica, sans-serif;
+  font: bold 24px/31px pt_serif, arial, helvetica, sans-serif;
   padding: 40px 0;
   padding-left: 44px;
-  position: relative; }
+  position: relative;
+}
 
 .logo__circle {
   width: 28px;
@@ -16,30 +18,37 @@ body {
   top: 50%;
   transform: translateY(-50%);
   border-radius: 50%;
-  opacity: .7; }
+  opacity: .7;
+}
 
 .logo__circle_color_blue {
   left: 8px;
   top: 56%;
-  background: #c8dbfb; }
+  background: #c8dbfb;
+}
 
 .logo__circle_color_dark-blue { background: #0056ec; }
 
-.main-content__title { font-family: 'PT Serif', serif; }
+.main-content__title { font-family: 'pt_serif', serif; }
 
 .wrapper {
   margin: auto;
-  width: 80%; }
+  width: 80%;
+}
 
 .header {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 .menu {
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
-.menu__item { padding: 0 13px; }
+.menu__item { padding: 0 13px;
+}
 
 .menu__item: last-child {
-  padding-right: 0; }
+  padding-right: 0;
+}
