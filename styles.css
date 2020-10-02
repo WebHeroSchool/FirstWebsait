@@ -33,8 +33,8 @@ body {
 }
 
 .main {
-  padding: 0 45% 100px 27px;
-  background-position: top 0 right 0 no-repeat url(img/img.svg);
+  padding: 20px 45% 100px 27px;
+  background: top 5px right 10px no-repeat url(img/img.svg);
 }
 
 .main__title {
@@ -74,7 +74,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .menu {
