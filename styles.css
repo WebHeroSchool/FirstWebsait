@@ -124,3 +124,9 @@ body {
   opacity: 1;
   width: 100%;
 }
+
+@media (max-width:768px) {
+  .menu {
+    display: none;
+  }
+}
