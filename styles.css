@@ -47,7 +47,8 @@ body {
 }
 
 .main__description {
-  margin: 0 150px 41px 0;
+  margin-bottom: 41px;
+  max-width: 75%;
   font: 18px/21px Roboto, arial, helvetica, sans-serif;
 }
 
@@ -90,10 +91,6 @@ body {
   color: #000;
   text-decoration: none;
   transition: opacity .5s;
-}
-
-.menu__item: last-child {
-  margin-right: 0;
 }
 
 .menu__item_active::after {
