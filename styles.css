@@ -130,14 +130,19 @@ body {
     opacity: 0;
   }
 
-  #checkbox:checked~.burger {
+  #checkbox:checked~.burger::after {
+    transform: rotate(135deg);
 
   }
+  #checkbox:checked~.burger::before {
+    transform: rotate(45deg);
+    top: 5px;
+  }
 
+  }
   .burger {
     display: block;
     position: relative;
-    text-align:
     width: 25px;
     height: 3px;
     border-bottom: 1px solid #0056ec;
