@@ -54,7 +54,7 @@ body {
 
 .main__button {
   display: inline-block;
-  font: 14px/16px Roboto, arial, helvetica, sans-serif;
+  font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
   color: #fff;
   background: #0056ec;
   padding: 13px 23px;
@@ -125,8 +125,74 @@ body {
   width: 100%;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
+  #checkbox {
+    opacity: 0;
+  }
+
+  #checkbox:checked~.burger {
+
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    text-align:
+    width: 25px;
+    height: 3px;
+    border-bottom: 1px solid #0056ec;
+  }
+
+  .burger::after, .burger::before {
+    display: flex;
+    position: relative;
+    content: "";
+    height: 3px;
+    width: 100%;
+    border-bottom: 1px solid #0056ec;
+    top: 4px;
+  }
+
+  .header {
+    margin: 0 0 28px;
+    max-width: none;
+  }
   .menu {
     display: none;
   }
+  .logo {
+    padding: 0;
+    background-position: top right;
+  }
+  .logo__circle_color_blue {
+    margin: 0;
+    left: 8px;
+  }
+  .logo__circle_color_dark {
+    margin: 0 0 0 0;
+  }
+  .main {
+    text-align: center;
+    padding: 70% 0 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: 100%;
+    background-position: top center;
+  }
+  .main__title {
+    margin-bottom: 30px;
+    font: bold 30px/40px 'pt_serif', arial, helvetica, sans-serif;
+  }
+  .main__description {
+    margin-bottom: 25px;
+    max-width: 85%;
+    padding-left: 10px;
+    font: 16px/19px Roboto, arial, helvetica, sans-serif;
+  }
+  .main__button {
+    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    }
 }
