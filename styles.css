@@ -3,8 +3,7 @@ body {
   margin: 0;
 }
 
-.logo-text {
-  font: bold 24px/32px pt_serif, arial, helvetica, sans-serif;
+.logo {
   padding: 40px 0 40px 74px;
   position: relative;
 }
@@ -30,6 +29,15 @@ body {
 .logo__circle_color_dark-blue {
   margin-left: 30px;
   background: #0056ec;
+}
+
+.logo__text {
+  font: bold 24px/32px pt_serif, arial, helvetica, sans-serif;
+  position: relative;
+}
+
+#checkbox {
+  opacity: 0;
 }
 
 .main {
@@ -125,6 +133,14 @@ body {
   width: 100%;
 }
 
+@media (min-width: 1900) {
+
+  .wrapper {
+    border: 10px solid red;
+  }
+
+}
+
 @media (max-width: 768px) {
   #checkbox {
     opacity: 1;
@@ -137,7 +153,6 @@ body {
 
   #checkbox:checked~.burger::before {
     transform: rotate(45deg);
-
   }
 
   #checkbox:checked~.burger {
@@ -147,8 +162,8 @@ body {
   #checkbox:checked~.menu {
     display: block;
     text-align: center;
-
 }
+
   #checkbox:checked~.menu__item {
     display: inline-block;
     font: 500 30px/35px Roboto, arial, helvetica, sans-serif;
@@ -160,6 +175,7 @@ body {
   #checkbox:checked~.header {
     margin-bottom: 100%;
   }
+
   .wrapper {
     width: 100%;
     margin: auto;
@@ -172,7 +188,6 @@ body {
     border-bottom: 3px solid #0056ec;
     padding-top: 15px;
     margin-left: 30%;
-
   }
 
   .burger::after, .burger::before {
@@ -181,12 +196,12 @@ body {
     content: "";
     width: 25px;
     border-bottom: 3px solid #0056ec;
-    }
-
   }
+
   .burger::after {
     padding-top: 4px;
   }
+
   .header {
     margin-bottom: auto;
     border: 1px solid red;
@@ -196,7 +211,7 @@ body {
     display: none;
   }
 
-  .logo-text {
+  .logo__text {
     display: none;
   }
 
@@ -217,16 +232,19 @@ body {
     background-size: 100%;
     background-position: top center;
   }
+
   .main__title {
     margin-bottom: 30px;
     font: bold 30px/40px 'pt_serif', arial, helvetica, sans-serif;
   }
+
   .main__description {
     margin-bottom: 25px;
     max-width: 85%;
     padding-left: 10px;
     font: 16px/19px Roboto, arial, helvetica, sans-serif;
   }
+
   .main__button {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
     max-width: 50%;
