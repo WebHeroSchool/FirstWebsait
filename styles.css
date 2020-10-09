@@ -134,7 +134,6 @@ body {
 }
 
 @media (min-width: 1900px) {
-
   .wrapper {
     width: 85%;
   }
@@ -143,7 +142,8 @@ body {
     padding: 40px 0 40px 97px;
   }
 
-  .logo__circle_color_blue, .logo__circle_color_dark-blue {
+  .logo__circle_color_blue,
+  .logo__circle_color_dark-blue {
     margin-left: 53px;
   }
 
@@ -163,7 +163,6 @@ body {
   .main {
     padding: 38px 50% 0 50px;
     background: top -30px right 6% /47% no-repeat url(img/img.svg);
-
   }
 
   .main__title {
@@ -189,24 +188,50 @@ body {
     opacity: 0;
   }
 
-  #checkbox:checked~label .burger::before {
+  .burger__menu {
+    display: flex;
+    width: 25px;
+    padding-top: 4px;
+    border-bottom: 3px solid #0056ec;
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    margin: 27px 8px 0 0;
+    z-index: 20;
+  }
+
+  .burger::after, .burger::before {
+    display: flex;
+    position: relative;
+    content: "";
+    border-bottom: 3px solid #0056ec;
+    padding-bottom: 4px;
+  }
+
+  #checkbox:checked ~ label .burger::before {
     position: relative;
     transform: rotate(45deg);
     top: 7px;
   }
 
-  #checkbox:checked~label .burger::after {
+  #checkbox:checked ~ label .burger::after {
     position: relative;
     transform: rotate(-45deg);
-    top:-4px;
+    top: -4px;
     right: 3px;
-    }
+  }
 
-  #checkbox:checked~label .burger__menu {
+  #checkbox:checked ~ label .burger__menu {
     border: none;
   }
 
-  #checkbox:checked~.menu {
+  .menu {
+    display: none;
+  }
+  
+  #checkbox:checked ~ .menu {
     display: block;
     position: fixed;
     background: white;
@@ -217,7 +242,7 @@ body {
     z-index: 10;
   }
 
-  #checkbox:checked~.menu .menu__item {
+  #checkbox:checked ~ .menu .menu__item {
     display: block;
     font: 500 30px/35px Roboto, arial, helvetica, sans-serif;
     padding-bottom: 24px;
@@ -246,38 +271,8 @@ body {
     margin-left: 23px;
   }
 
-
-  .burger {
-    display: block;
-    position: relative;
-    margin: 27px 8px 0 0;
-    z-index: 20;
-  }
-
-  .burger__menu {
-    display: flex;
-    width: 25px;
-    padding-top: 4px;
-    border-bottom: 3px solid #0056ec;
-  }
-
-  .burger::after, .burger::before {
-    display: flex;
-    position: relative;
-    content: "";
-    border-bottom: 3px solid #0056ec;
-  }
-
-  .burger::after, .burger::before {
-    padding-bottom: 4px;
-  }
-
   .header {
     margin-bottom: auto;
-  }
-
-  .menu {
-    display: none;
   }
 
   .main {
