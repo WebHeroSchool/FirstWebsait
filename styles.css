@@ -186,33 +186,43 @@ body {
 
 @media (max-width: 768px) {
   #checkbox {
-    margin: 5% 0 0 65%;
-    opacity: 1;
+    opacity: 0;
   }
 
-  #checkbox:checked~.burger::before {
+  #checkbox:checked~label .burger::before {
+    position: relative;
     transform: rotate(45deg);
+    top: 7px;
   }
 
-  #checkbox:checked~.burger::after {
-    transform: rotate(135deg);
-    margin-top: -10px;
-  }
+  #checkbox:checked~label .burger::after {
+    position: relative;
+    transform: rotate(-45deg);
+    top:-4px;
+    right: 3px;
+    }
 
-  #checkbox:checked~.burger__menu {
+  #checkbox:checked~label .burger__menu {
     border: none;
   }
 
   #checkbox:checked~.menu {
     display: block;
+    position: fixed;
+    background: white;
+    padding-top: 50%;
+    width: 100%;
+    height: 100%;
     text-align: center;
+    z-index: 10;
   }
 
-  #checkbox:checked~.menu__item {
-    display: inline-block;
+  #checkbox:checked~.menu .menu__item {
+    display: block;
     font: 500 30px/35px Roboto, arial, helvetica, sans-serif;
-    transition: .5s;
-    margin-left: -50%;
+    padding-bottom: 24px;
+    width: auto;
+    margin-right: 0;
   }
 
   .wrapper {
@@ -239,7 +249,9 @@ body {
 
   .burger {
     display: block;
+    position: relative;
     margin: 27px 8px 0 0;
+    z-index: 20;
   }
 
   .burger__menu {
