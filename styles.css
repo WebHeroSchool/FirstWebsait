@@ -250,12 +250,12 @@ body {
   }
 
   .header {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 
   .main {
-    padding: 38px 50% 0 50px;
-    background: top -30px right 6% /47% no-repeat url(img/img.svg);
+    padding: 120px 50% 100% 50px;
+    background: top 48px right 6% /47% no-repeat url(img/img.svg);
   }
 
   .main__title {
