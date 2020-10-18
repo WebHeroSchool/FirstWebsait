@@ -42,7 +42,7 @@ body {
 
 .main {
   padding: 20px 45% 100px 27px;
-  background: top 5px right 25px no-repeat url(img/img.svg);
+  background: top 5px right 10px no-repeat url(img/img.svg);
 }
 
 .main__title {
@@ -60,6 +60,73 @@ body {
   font: 18px/21px Roboto, arial, helvetica, sans-serif;
 }
 
+@keyframes pulse1 {
+  0% {
+    transform: scale(.9, .9);
+  }
+
+  30% {
+    transform: scale(1, 1);
+    opacity: .8;
+  }
+
+  50% {
+    transform: scale(1.2, 1.2);
+    opacity: .7;
+  }
+
+  70% {
+    transform: scale(1.3, 1.3);
+    opacity: .5;
+  }
+
+  90% {
+    transform: scale(1.4, 1.4);
+    opacity: .3;
+  }
+
+  100% {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    transform: scale(.9, .9);
+  }
+
+  30% {
+    transform: scale(1, 1);
+    opacity: .8;
+  }
+
+  50% {
+    transform: scale(1.2, 1.2);
+    opacity: .7;
+  }
+
+  80% {
+    transform: scale(1.3, 1.3);
+    opacity: .3;
+  }
+
+  90% {
+    transform: scale(1.4, 1.4);
+    opacity: .1;
+  }
+
+  100% {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+}
+
+.main__animation {
+  display: block;
+  position: absolute;
+}
+
 .main__button {
   display: inline-block;
   font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
@@ -71,8 +138,34 @@ body {
   transition: opacity .5s;
 }
 
+.main__button::after,
+.main__button::before {
+  display: block;
+  position: absolute;
+  width: 202px;
+  height: 35px;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+  border: 3px solid #0056ec;
+  content: '';
+}
+
+.main__button::before {
+  animation: pulse1 1.5s 0s linear infinite;
+}
+
+.main__button::after {
+  animation: pulse2 1.5s .3s linear infinite;
+}
+
 .main__button:hover {
   opacity: .5;
+}
+
+.main__button:hover::after,
+.main__button:hover::before {
+  animation: none;
 }
 
 .wrapper {
@@ -90,7 +183,6 @@ body {
   display: flex;
   align-items: center;
   padding-top: 12px;
-  margin-right: 14px;
 }
 
 .menu__item {
@@ -149,8 +241,8 @@ body {
   }
 
   .menu {
-    padding-top: 0;
-    padding-right: 30px;
+    padding-top: 2px;
+    padding-right: 42px;
   }
 
   .menu__item {
@@ -158,12 +250,12 @@ body {
   }
 
   .header {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 
   .main {
-    padding: 38px 50% 0 50px;
-    background: top -30px right 6% /47% no-repeat url(img/img.svg);
+    padding: 120px 50% 100% 50px;
+    background: top 48px right 6% /47% no-repeat url(img/img.svg);
   }
 
   .main__title {
@@ -181,6 +273,12 @@ body {
     padding: 17px 28px;
     margin-left: 2px;
     margin-bottom: 25%;
+  }
+
+  .main__button::before,
+  .main__button::after {
+    width: 271px;
+    height: 50px;
   }
 }
 
@@ -201,6 +299,7 @@ body {
   .menu {
     padding-right: 16px;
     padding-top: 10px;
+    margin-right: 12px;
   }
 
   .menu__item {
@@ -340,8 +439,12 @@ body {
     font: 16px/19px Roboto, arial, helvetica, sans-serif;
   }
 
+  .main__animation {
+    margin-left: 22%;
+  }
   .main__button {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
     padding: 14px 21px;
   }
+
 }
