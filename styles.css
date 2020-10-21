@@ -4,7 +4,7 @@ body {
 }
 
 .logo {
-  padding: 40px 0 40px 74px;
+  padding: 42px 0 40px 74px;
   position: relative;
 }
 
@@ -42,7 +42,7 @@ body {
 
 .main {
   padding: 20px 45% 100px 27px;
-  background: top 5px right 10px no-repeat url(img/img.svg);
+  background: top 5px right 27% no-repeat url(img/img.svg);
 }
 
 .main__title {
@@ -56,7 +56,8 @@ body {
 
 .main__description {
   margin-bottom: 41px;
-  max-width: 75%;
+  padding-left: 3px;
+  max-width: 65%;
   font: 18px/21px Roboto, arial, helvetica, sans-serif;
 }
 
@@ -125,6 +126,7 @@ body {
 .main__animation {
   display: block;
   position: absolute;
+  margin-left: 3px;;
 }
 
 .main__button {
@@ -147,7 +149,7 @@ body {
   top: 0;
   left: 0;
   border-radius: 4px;
-  border: 3px solid #0056ec;
+  border: 2px solid #0056ec;
   content: '';
 }
 
@@ -170,7 +172,7 @@ body {
 
 .wrapper {
   margin: auto;
-  width: 72%;
+  width: 75%;
 }
 
 .header {
@@ -182,7 +184,8 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  padding-top: 12px;
+  padding-top: 11px;
+  margin-right: 13.5%;
 }
 
 .menu__item {
@@ -242,7 +245,7 @@ body {
 
   .menu {
     padding-top: 2px;
-    padding-right: 42px;
+    margin-right: 42px;
   }
 
   .menu__item {
@@ -308,16 +311,16 @@ body {
 
   .main {
     padding: 20px 45% 100px 45px;
-    background: top 5px right 49px no-repeat url(img/img.svg);
+    background: top 0 right 9% no-repeat url(img/img.svg);
   }
 
   .main__title {
-    margin: 0 0 35px 0;
+    margin: 0 0 32px 0;
     padding-bottom: 5px;
   }
 
   .main__description {
-    max-width: 67%;
+    max-width: 69%;
   }
 
   .main__button {
