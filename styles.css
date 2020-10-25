@@ -371,9 +371,8 @@ body {
   .main__title {
     font: bold 32px/42px 'pt_serif', arial, helvetica, sans-serif;
     max-width: 70%;
-    }
+  }
 }
-
 
 @media (min-width: 200px) and (max-width: 760px) {
   #checkbox {
