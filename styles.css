@@ -4,7 +4,7 @@ body {
 }
 
 .logo {
-  padding: 42px 0 40px 74px;
+  padding: 40px 0 40px 70px;
   position: relative;
 }
 
@@ -42,11 +42,11 @@ body {
 
 .main {
   padding: 20px 45% 100px 27px;
-  background: top 5px right 27% no-repeat url(img/img.svg);
+  background: top 3px right 13% no-repeat url(img/img.svg);
 }
 
 .main__title {
-  margin: 0 0 40px 0;
+  margin: 0 0 38px 0;
   font: bold 50px/66px 'pt_serif', arial, helvetica, sans-serif;
 }
 
@@ -55,9 +55,8 @@ body {
 }
 
 .main__description {
-  margin-bottom: 41px;
-  padding-left: 3px;
-  max-width: 65%;
+  margin-bottom: 42px;
+  max-width: 70%;
   font: 18px/21px Roboto, arial, helvetica, sans-serif;
 }
 
@@ -173,6 +172,7 @@ body {
 .wrapper {
   margin: auto;
   width: 75%;
+  margin-left: 14%;
 }
 
 .header {
@@ -184,8 +184,8 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  padding-top: 11px;
-  margin-right: 13.5%;
+  padding-top: 10px;
+  margin-right: 80px;
 }
 
 .menu__item {
@@ -195,6 +195,15 @@ body {
   color: #000;
   text-decoration: none;
   transition: opacity .5s;
+}
+
+.menu__item:nth-child(4n) {
+  left: 6px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+  left: 7px;
 }
 
 .menu__item_active::after {
@@ -231,34 +240,39 @@ body {
 
 @media (min-width: 1900px) {
   .wrapper {
-    width: 85%;
+    width: 80%;
+    margin: auto;
   }
 
   .logo {
-    padding: 40px 0 40px 97px;
+    padding: 40px 0 40px 46px;
+
   }
 
   .logo__circle_color_blue,
   .logo__circle_color_dark-blue {
-    margin-left: 53px;
+    margin-left: 5px;
   }
 
   .menu {
     padding-top: 2px;
-    margin-right: 42px;
+    margin-right: 20px;
   }
 
   .menu__item {
     font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
   }
 
+  .menu__item:last-child {
+    left: 12px;
+  }
   .header {
     margin-bottom: 5%;
   }
 
   .main {
-    padding: 120px 50% 100% 50px;
-    background: top 48px right 6% /47% no-repeat url(img/img.svg);
+    padding: 8% 50% 100% 0;
+    background: top 55px right 1% /50% no-repeat url(img/img.svg);
   }
 
   .main__title {
@@ -267,8 +281,10 @@ body {
   }
 
   .main__description {
-    max-width: 60%;
+    max-width: 57%;
     font: 22px/26px Roboto, arial, helvetica, sans-serif;
+    left: 0;
+    margin-bottom: 43px;
   }
 
   .main__button {
@@ -288,8 +304,12 @@ body {
 @media (min-width: 769px) and (max-width: 1300px) {
   .wrapper {
     width: 100%;
+    margin: auto;
   }
 
+  .logo {
+    margin-top: -1px;
+  }
   .logo__circle_color_blue,
   .logo__circle_color_dark-blue {
     margin-left: 45px;
@@ -302,7 +322,7 @@ body {
   .menu {
     padding-right: 16px;
     padding-top: 10px;
-    margin-right: 12px;
+    margin-right: 38px;
   }
 
   .menu__item {
@@ -311,7 +331,7 @@ body {
 
   .main {
     padding: 20px 45% 100px 45px;
-    background: top 0 right 9% no-repeat url(img/img.svg);
+    background: top 4px right 9% no-repeat url(img/img.svg);
   }
 
   .main__title {
@@ -321,6 +341,7 @@ body {
 
   .main__description {
     max-width: 69%;
+    margin-bottom: 43px;
   }
 
   .main__button {
@@ -328,7 +349,7 @@ body {
   }
 }
 
-@media (max-width: 377px) {
+@media (min-width: 200px) and (max-width: 760px) {
   #checkbox {
     opacity: 0;
   }
@@ -443,11 +464,21 @@ body {
   }
 
   .main__animation {
-    margin-left: 22%;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
   }
+
   .main__button {
+    position: relative;
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
     padding: 14px 21px;
   }
 
+  .main__button::before,
+  .main__button::after {
+    width: 205px;
+    height: 38px;
+  }
 }
