@@ -301,7 +301,7 @@ body {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1300px) {
+@media (min-width: 1000px) and (max-width: 1300px) {
   .wrapper {
     width: 100%;
     margin: auto;
@@ -348,6 +348,32 @@ body {
     padding: 13px 21px;
   }
 }
+
+@media (min-width: 760px) and (max-width: 1000px) {
+  .wrapper {
+    width: 95%;
+    margin: auto;
+  }
+
+  .menu {
+    margin-left: 15%;
+    margin-right: 5%;
+  }
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .main {
+    background: top 4px right 9%/55% no-repeat url(img/img.svg);
+  }
+
+  .main__title {
+    font: bold 32px/42px 'pt_serif', arial, helvetica, sans-serif;
+    max-width: 70%;
+    }
+}
+
 
 @media (min-width: 200px) and (max-width: 760px) {
   #checkbox {
